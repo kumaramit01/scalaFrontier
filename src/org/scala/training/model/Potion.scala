@@ -8,4 +8,4 @@ package org.scala.training.model
  * To change this template use File | Settings | File Templates.
  */
 
-case class Potion(color:String,scale:Int,scaleMax:Int=100,cost:Option[Int]) extends Identity{}
+case class Potion(uid:Int,name:String,description:String,color:String,scale:Int,scaleMax:Int=100,cost:Option[Int]) extends Identity{}

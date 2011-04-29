@@ -8,4 +8,4 @@ package org.scala.training.model
  * To change this template use File | Settings | File Templates.
  */
 
-class Weapon(power:Int,powerMax:Int,cost:Int) extends Identity{}
+case class Weapon(uid:Int,name:String,description:String,power:Int,powerMax:Int,cost:Int) extends Identity{}

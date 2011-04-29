@@ -9,9 +9,7 @@ package org.scala.training.model
  */
 
 trait Identity{
- val uid: java.util.UUID= null
- val name: String  =null
- val description:String =null
-
-
+ val uid: Int
+ val name: String
+ val description:String
 }

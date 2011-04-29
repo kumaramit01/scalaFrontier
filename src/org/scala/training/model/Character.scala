@@ -11,7 +11,7 @@ import collection.mutable.Set;
  */
 
 case class Character(name:String, description:String,armor:Option[Armor],weapon: Option[Weapon],health:Int=100){
- val items:Set[Identity]  = null
+ val items:Set[Item]  = null
 
 }
 
