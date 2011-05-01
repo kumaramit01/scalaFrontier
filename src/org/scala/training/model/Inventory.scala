@@ -5,7 +5,23 @@ package org.scala.training.model
  * User: amitku
  * Date: 4/29/11
  * Time: 3:31 PM
- * To change this template use File | Settings | File Templates.
  */
 
-class Inventory
+case class Inventory(items:List[Item]){
+
+
+
+  def addItem(item:Item) {
+      Inventory(item :: items)
+  }
+
+
+  def removeItem(item:Item){
+    Inventory(items.filterNot(
+    _.name == item.name
+    )
+   )
+  }
+
+
+}

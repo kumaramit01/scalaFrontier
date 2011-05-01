@@ -8,4 +8,4 @@ package org.scala.training.model
  * To change this template use File | Settings | File Templates.
  */
 
-case class Item(uid:Int,name:String,description:String) extends Identity{}
+case class Item(name:String,description:String,weight:Option[Int],cost:Option[Int],operations:Option[List[Action]]) extends Identity{}

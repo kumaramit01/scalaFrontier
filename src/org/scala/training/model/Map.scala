@@ -5,10 +5,10 @@ package org.scala.training.model
  * User: amitku
  * Date: 4/29/11
  * Time: 1:01 PM
- * To change this template use File | Settings | File Templates.
  */
 
-case class Map(uid:Int,name:String,description:String,items:Set[Item]) extends Identity{
+case class Map(name:String,items:List[Item],
+               paths:List[String]){
 
 
 }

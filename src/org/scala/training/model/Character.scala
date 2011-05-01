@@ -10,21 +10,8 @@ import collection.mutable.Set;
  * To change this template use File | Settings | File Templates.
  */
 
-case class Character(name:String, description:String,armor:Option[Armor],weapon: Option[Weapon],health:Int=100){
+case class Character(name:String, description:String,armor:Option[Armor],weapon: Option[List[Weapon]],health:Int=100){
  val items:Set[Item]  = null
 
 }
 
-
-object Test{
-
-
-  def main(args: Array[String]) {
-
-    val larry = new Character("Larry","A sample character",None,None,150)
-    println(larry)
-
-  }
-
-
-}

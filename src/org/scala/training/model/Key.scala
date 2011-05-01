@@ -8,6 +8,6 @@ package org.scala.training.model
  * To change this template use File | Settings | File Templates.
  */
 
-case class Key(uid:Int,name:String,description:String,locks:Set[Lock],cost:Int) extends Identity
+case class Key(name:String,description:String,locks:Set[Lock],cost:Int) extends Identity
 
 ///val myKey = Key[Lock](locks = )

@@ -9,7 +9,7 @@ package org.scala.training.model
  */
 
 trait Identity{
- val uid: Int
+ val uid: java.util.UUID = java.util.UUID.randomUUID
  val name: String
  val description:String
 }
